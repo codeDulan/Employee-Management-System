@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #050505;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the table vertically */
+  align-items:top; /* Centers the table horizontally */
+ 
+}
+
+table {
+  margin: auto;
+  text-align: center; /* Optional: centers text inside the table */
+}
+
