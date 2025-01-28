@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { createEmployee, getEmployee } from '../services/EmployeeService'
+import { createEmployee, getEmployee, updateEmployee } from '../services/EmployeeService'
 import { useNavigate, useParams } from 'react-router-dom'
 
 const EmployeeComponents = () => {
@@ -40,12 +40,13 @@ const EmployeeComponents = () => {
             console.log(employee);
 
             if(id){
-                updateEmployee(id, employee).then((response) =>{
+                updateEmployee(id, employee).then((response) => {
                     console.log(response.data);
                     navigator('/employees');
                 }).catch(error => {
                     console.error(error);
                 })
+
             }else{
                 createEmployee(employee).then((response) => {
                     console.log(response.data);
@@ -102,6 +103,7 @@ const EmployeeComponents = () => {
 
   return (
     <div className='container'>
+    <br/> <br/>
         <div className='row'>
             <div className='card'>
                 {
