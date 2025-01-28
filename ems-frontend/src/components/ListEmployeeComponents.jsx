@@ -41,7 +41,7 @@ const ListEmployeeComponents = () => {
         }
 
   return (
-    <div className='container'>
+    <div className='container-fluid'>
         <h2 className='text-center'>List of Employees</h2>
         <button className='btn btn-primary mb-2'onClick={addNewEmployee}>Add New Employee</button>
         <table className='table table-striped table-bordered'>
