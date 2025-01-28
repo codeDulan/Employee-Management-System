@@ -61,7 +61,7 @@ const ListEmployeeComponents = () => {
     <div className='container'>
         <h2 className='text-center'>List of Employees</h2>
         <button className='btn btn-primary mb-2'onClick={addNewEmployee}>Add New Employee</button>
-        <table class='table table-striped table-bordered'>
+        <table className='table table-striped table-bordered'>
             <thead>
                 <tr>
                     <th>Employee ID</th>
@@ -80,7 +80,11 @@ const ListEmployeeComponents = () => {
                             <td>{employee.lastName}</td>
                             <td>{employee.email}</td>
                             <td>
+
+                                <button className='btn btn-info' onClick={() => updateEmployee(employee.id)}>Update</button>
+
                                 <button className='btn btn-infor' onClick={() => updateEmployee(employee.id)}>Update</button>
+
                                 <button className='btn btn-danger' onClick={() => removeEmployee(employee.id)}>Delete</button>
                             </td>
                         </tr>
