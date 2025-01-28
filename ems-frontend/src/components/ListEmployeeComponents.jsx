@@ -44,13 +44,14 @@ const ListEmployeeComponents = () => {
     <div className='container'>
         <h2 className='text-center'>List of Employees</h2>
         <button className='btn btn-primary mb-2'onClick={addNewEmployee}>Add New Employee</button>
-        <table className='table table-striped table-bordered'>
+        <table class='table table-striped table-bordered'>
             <thead>
                 <tr>
                     <th>Employee ID</th>
                     <th>Employee First Name</th>
                     <th>Employee Last Name</th>
                     <th>Email ID</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -61,6 +62,9 @@ const ListEmployeeComponents = () => {
                             <td>{employee.firstName}</td>
                             <td>{employee.lastName}</td>
                             <td>{employee.email}</td>
+                            <td>
+                                <button className='btn btn-inform'>Update</button>
+                            </td>
                         </tr>
                     )
                 }

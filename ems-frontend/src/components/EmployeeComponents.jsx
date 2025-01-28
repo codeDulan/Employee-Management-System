@@ -76,7 +76,7 @@ const EmployeeComponents = () => {
                                 placeholder='Enter Employee First Name'
                                 name='firstName'
                                 value={firstName}
-                                className= {`form-control $( errors.firstName ? 'is-invalid': '')`}
+                                className= {`form-control $( errors.firstName ? 'is-invalid': '' )`}
                                 onChange={(e) => setFirstName(e.target.value)}></input>
                                 { errors.firstName && <div className='invalid-feedback'>{ errors.firstName}</div>}
                         </div>
@@ -88,7 +88,7 @@ const EmployeeComponents = () => {
                                 placeholder='Enter Employee Last Name'
                                 name='lastName'
                                 value={lastName}
-                                className= {`form-control $( errors.lastName ? 'is-invalid': '')`}
+                                className= {`form-control $( errors.lastName ? 'is-invalid': '' )`}
                                 onChange={(e) => setLastName(e.target.value)}></input>
                                 { errors.lastName && <div className='invalid-feedback'>{ errors.lastName}</div>}
                         </div>
@@ -100,7 +100,7 @@ const EmployeeComponents = () => {
                                 placeholder='Enter Employee Email'
                                 name='email'
                                 value={email}
-                                className= {`form-control $( errors.email ? 'is-invalid': '')`}
+                                className= {`form-control $( errors.email ? 'is-invalid': '' )`}
                                 onChange={(e) => setEmail(e.target.value)}></input>
                                 { errors.email && <div className='invalid-feedback'>{ errors.email}</div>}
                         </div>
