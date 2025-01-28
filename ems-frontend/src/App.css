@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden; /* Prevent unwanted horizontal scroll */
+}
+
 .footer {
   text-align: center;
   color: white;
@@ -6,6 +17,8 @@
   bottom: 0;
   width: 100%;
   height: 50px;
+
+
 }
 
 
